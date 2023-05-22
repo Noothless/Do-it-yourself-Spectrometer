@@ -1,14 +1,54 @@
 \section{Introduction}
-    Starting from the Boyle-Mariotte law $pV = \text{const}$, stated in 1661 by R. Townley, the question what happens if the pressure is changed while keeping the same volume is raised.
-    G. Amontons delivered an answer to this question in 1703: pressure and temperature change are linked linearly.
-    \begin{align}
-        p(t) = \text{const} (t - t_0)
-    \end{align}
-    As pressures cannot be negative, it is now obvious that there must be a 'lowest' temperature, hereby referred to as the absolute zero point of temperature. 
-    The findings also imply that pressure depends on temperature, amount of particles and volume, leading to the ideal gas law~\ref{eq_igl}.
-    To determine the absolute zero point of temperature, we make use of the findings from Townley and Amontons:
-    An apparatus of constant volume to which a pressure measurement device is connected can be heated up and cooled down, resulting in a change of pressure in the closed chamber.
-    From these changes in pressure, a linear relation can be established which leads to the value of the lowest possible temperature $t_0$
+
+    The goal of this experiment series is to build a spectrometer using household objects by making use of the wave character of light.
+    % Interference double-silt source: https://wiki.anton-paar.com/ch-de/doppelspaltexperiment/
+    % Interference grating source: https://www.grund-wissen.de/physik/optik/wellenoptik.html
+    % Grating constant source: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5547333&tag=1 (eth network)
+    
+    \begin{minipage}{0.99\linewidth}
+        \begin{minipage}{0.5\linewidth}
+            \begin{figure}[H]
+                \centering
+                \includegraphics[scale = 0.4]{src/images/experimental_setup.png}
+                \caption{\textbf{caption here}}
+                \label{fig_setup}
+            \end{figure}
+        \end{minipage}
+        \begin{minipage}{0.5\linewidth}
+          \begin{scriptsize}
+            \begin{center}
+                \begin{figure}[H]
+                    \centering
+                    \includegraphics[scale = 0.05]{src/images/spectrometer.png}
+                    \caption{\textbf{caption here}}
+                    \label{fig_spectrometer}
+                \end{figure}
+            \end{center}
+            \end{scriptsize}
+        \end{minipage}
+      \end{minipage}
+
+    
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[]{src/images/interference_double_slit.jpg}
+        \caption{}
+        \label{fig_double_slit}
+    \end{figure}
+
+    Light travels in a spherical way behind a slit meaning that each slit acts as a new source of waves
+    These waves interfere with each other as they overlap, resulting in an interference pattern of alternating bright and dark regions on the screen or detector.
+    This behaviour is due to the fact that two maxima or minima intensify each other while a maximum and a minimum cancel each other out.
+    Figure~\ref{fig_double_silt} shows how this effect works.
+
+    \begin{figure}[H]
+        \centering
+        \includegraphics[]{src/images/interference_grating.png}
+        \caption{\textbf{caption here}}
+        \label{fig_grating}
+    \end{figure}
+
 
     % In general this section should tell the reader why he or she should
     % be interested in your paper. Give some background to the
