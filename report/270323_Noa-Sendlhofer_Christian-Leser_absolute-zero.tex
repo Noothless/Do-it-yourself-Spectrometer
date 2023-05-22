@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\usepackage{parskip}
+\usepackage[ansinew]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{float}
+\usepackage[free-standing-units=true]{siunitx} % for consistent handling of SI units
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, citecolor=blue, urlcolor=blue]{hyperref} % enable links
+
+\setlength{\parindent}{0pt}
+
+\newcommand{\m}[1]
+{\mathrm{#1}}
+
+\title{Experiment 9: Absolute Zero}
+\author{Noa Sendlhofer, Christian Leser}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    The goal of this experiment series is to determine the temperature of absolute zero, 
+    as well as the temperature of liquid nitrogen. An apparatus of constant volume is filled with a gas
+    and connected to a pressure sensor. Changing temperatures result in changes in pressure inside the chamber.
+    Influences like the pressure and temperature inside the lab, as well as the expansion of the chamber itself
+    in changing temperatures must be considered when discussing the obtained data. We concluded that the temperature
+    of absolute zero $t_0 = (-275.9 \pm 2.45)\si{\bf\celsius}$ and the temperature of liquid nitrogen $t_{LN2} = (-198.5 \pm 2.56)\si{\bf\celsius}$.
+    The literature values lie within our error margins.
+
+\end{abstract}
+
+\tableofcontents
+
+\input{src/1_introduction.tex}
+
+\input{src/2_methods.tex}
+
+\newpage
+
+\input{src/3_results.tex}
+
+\input{src/4_discussion.tex}
+
+\newpage
+
+\input{src/5_conclusion.tex}
+
+\input{src/6_appendix.tex}
+
+
+\begin{thebibliography}{99}
+
+\bibitem{literature_absolute_zero}
+Encyclop\ae dia Britannica, The Editors of Encyclopaedia Britannica, Adam Augustyn, absolute zero, \href{https://www.britannica.com/science/absolute-zero}{website} (last visited: 2023.04.02)
+
+\bibitem{literature_liquid_nitrogen}
+Encyclop\ae dia Britannica, R. Thomas Sanderson, Comparison of nitrogen group elements, \href{https://www.britannica.com/science/nitrogen-group-element/Comparison-of-nitrogen-group-elements}{website} (last visited: 2023.04.02)
+
+\bibitem{Manual}
+Manual to experiment 9 Absolute Zero (2022).
+
+\bibitem{GitHub}
+GitHub Repository containing the Jupyter Notebook we created to calculate all the presented values in this paper. \href{https://github.com/Noothless/Physik-Absolute-Zero}{website}
+
+\end{thebibliography}
+
+\end{document}
