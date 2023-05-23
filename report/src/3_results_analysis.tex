@@ -11,8 +11,8 @@ By combining eq. \ref{eq_interference} and eq. \ref{eq_phi} we get the following
 Multiple steps are necessary to calculate the distance $d$.
 First of all, we took a picture with the spectrometer pointed at the sunlight. We then selected suitable 
 points in the spectrum and compared them to tabulated wavelengths and their corresponding colors 
-in fig.~\ref{fig_wavelengths}. In the next step we measured the distance of said points to the zero point 
-in the grating pattern using the imtools method in matlab. This is our pixel distance $x$ in eq.~\ref{eq_distance}.
+in fig.~\ref{fig_wavelengths}. In the next step we measured the distance of said points to the zero-order maximum
+using the imtools method in matlab. This is our pixel distance $x$ in eq.~\ref{eq_distance}.
 
 For our final calculation of the distance $d$ we averaged multiple measurement points to get a more
 accurate result. This is shown in fig.~\ref{fig_distance_calc}.
@@ -32,7 +32,7 @@ Our averaged result for $d$ is:
 We have now successfully calibrated our spectrometer and we can now determine the wavelength
 of any point in the picture.
 The following equation is used to determine the wavelength of a point with a certain pixel 
-distance $x$ to the center point of the grating.
+distance $x$ to the zero-order maximum.
 \begin{align}
     \lambda = g \sin\left(\arctan\left(\frac{x}{d}\right)\right) \label{eq_lambda}
 \end{align}
