@@ -32,7 +32,7 @@ By combining eq. \ref{eq_interference} and eq. \ref{eq_phi} we get the following
 \end{align}
 
 Multiple steps are necessary to calculate the distance $d$.
-First of all, we took a picture with the spectrometer pointed at the sunlight. We then selected suitable 
+First of all, we took a picture with the spectrometer pointed at the sunlight \ref{fig_sunlight}. We then selected suitable 
 points in the spectrum and compared them to tabulated wavelengths and their corresponding colors 
 in fig.~\ref{fig_wavelengths}. In the next step we measured the distance of said points to the zero-order maximum
 using the imtools method in matlab. This is our pixel distance $x$ in eq.~\ref{eq_distance}.
@@ -66,4 +66,48 @@ Again the uncertainties were determined using the gaussian error propagation.
 \end{align}
 
 Using these obtained results we finally analyzed some different types of light
-sources. This collection of pictures is shown in the appendix of this paper.
+sources. In each case, we assumed an error of $\pm 10$ pixels, since we had to guess the position of each measurement point in the picture.
+
+\newpage
+
+First of all, we analyzed a fluorescent tube lamp. As can be seen in fig. \ref{fig_lamp1} below, this type of light source only emits certain small 
+ranges of wavelength. In our case, we measured the following ranges:
+\begin{alignat}{3}
+    &\text{Red spectrum:} \; &&(587 \pm 36)~\si{\nano\meter} & &- (622 \pm 38)~\si{\nano\meter} \nonumber\\
+    &\text{Green spectrum:} \; &&(487 \pm 32)~\si{\nano\meter} & &- (560 \pm 35)~\si{\nano\meter} \nonumber\\
+    &\text{Blue spectrum:} \; &&(430 \pm 29)~\si{\nano\meter} & &- (455 \pm 31)~\si{\nano\meter} \nonumber
+\end{alignat}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.31]{src/images/lamp1_meas.png}
+    \caption{Spectrum of a fluorescent tube.}
+    \label{fig_lamp1}
+\end{figure}
+
+As a second example, we analyzed a LED ceiling lamp. As can be seen in fig. \ref{fig_lamp2} below, this lamp
+emits almost the entire spectrum of visible light with no gaps visible. We measured the following range:
+\begin{alignat}{3}
+    &\text{Full spectrum:} \; &&(429 \pm 29)~\si{\nano\meter} & &- (650 \pm 38)~\si{\nano\meter} \nonumber
+\end{alignat}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.41]{src/images/lamp2_meas.png}
+    \caption{Spectrum of an LED ceiling light.}
+    \label{fig_lamp2}
+\end{figure}
+
+Lastly, we analyzed the computer screen of a laptop. In this example, the color purple was shown on the screen.
+As can be seen in fig. \ref{fig_purple_screen} only two very narrow bands of wavelengths are emitted.
+\begin{alignat}{3}
+    &\text{Red spectrum:} \; &&(597 \pm 37)~\si{\nano\meter} & &- (622 \pm 38)~\si{\nano\meter} \nonumber\\
+    &\text{Blue spectrum:} \; &&(433 \pm 29)~\si{\nano\meter} & &- (457 \pm 37)~\si{\nano\meter} \nonumber
+\end{alignat}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.25]{src/images/purple_screen_meas.png}
+    \caption{Spectrum of a computer screen displaying a purple color.}
+    \label{fig_purple_screen}
+\end{figure}
+
+Helium discharge tube
+Quecksilver light, UV A 400nm, UV C 250nm
