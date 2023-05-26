@@ -1,5 +1,28 @@
 \section{Results}\label{sec_results}
 
+In our case, we will calculate the grating constant $g$ using hypothetical values for the reasons mentioned in section \textbf{insert section and information from GPT}
+By rearranging and combining eq.\ref{eq_interference} and eq.\ref{eq_phi} we find a formula for the grating constant\ref{eq_g}.
+
+\begin{align}
+    g &= \frac{p \lambda}{\sin(\phi)} \label{eq_g}\\
+    \phi &= \arctan \left( \frac{x}{D} \right)
+\end{align}
+
+To calculate the uncertainty of the grating constant, the gaussian error propagation is a useful tool.
+
+\begin{align}
+    \Delta g &= \sqrt{\left( \frac{\partial g}{\partial p} \Delta p \right)^2 + \left( \frac{\partial g}{\partial \lambda} \Delta \lambda \right)^2 + \left( \frac{\partial g}{\partial \phi} \Delta \phi \right)^2}\\
+    \Delta \phi &= \sqrt{\left( \frac{\partial \phi}{\partial x} \Delta x \right)^2 + \left( \frac{\partial \phi}{\partial D} \Delta D \right)^2}
+\end{align}
+
+The hypothetical value of the grating constant $g$ and its uncertainty can now be calculated:
+
+\begin{align}
+    \bf g = (1520 \pm 20) ~\si{\bf\nano\meter} = (1.52 \pm 0.02) ~\si{\bf\micro\meter} \label{res_g}
+\end{align}
+
+Note that the obtained value is not the real value and that a different value for the grating constant $g$ \cite{src_grating_constant} is used in the remaining calculations.
+
 As mentioned in the previous chapter, the first goal is to find the distance $d$ of the grating
 and the image sensor.
 By combining eq. \ref{eq_interference} and eq. \ref{eq_phi} we get the following equation for $d$:
